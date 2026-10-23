@@ -1,0 +1,8 @@
+# Maximally conservative: never auto-allow anything unverified, no
+# reverify budget (first instability blocks).
+name: safe
+acceptance_policy:
+  allow_unverified_low_risk: false
+  max_reverify: 0
+permission:
+  default_verdict: deny

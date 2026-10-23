@@ -1,0 +1,9 @@
+# For long-running, low-supervision sessions: unverified low-risk edits
+# (per harness.permission.policy.classify_risk) are allowed without
+# stopping to ask, with more reverify headroom.
+name: autonomous
+acceptance_policy:
+  allow_unverified_low_risk: true
+  max_reverify: 5
+permission:
+  default_verdict: deny

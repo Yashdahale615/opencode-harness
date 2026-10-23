@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agents": {
+    "planner": "agents/planner/AGENT.md",
+    "coder": "agents/coder/AGENT.md",
+    "verifier": "agents/verifier/AGENT.md",
+    "reviewer": "agents/reviewer/AGENT.md"
+  },
+  "harness": {
+    "entry": "src/harness/entry.py",
+    "profile": "profiles/default.yaml"
+  }
+}

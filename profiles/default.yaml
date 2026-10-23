@@ -1,0 +1,9 @@
+# Balanced default: unverified low-risk mutations still require a human ask,
+# a couple of reverify attempts are allowed if the workspace keeps changing
+# during verification.
+name: default
+acceptance_policy:
+  allow_unverified_low_risk: false
+  max_reverify: 2
+permission:
+  default_verdict: deny   # harness.permission.policy.evaluate(): no rule match -> deny

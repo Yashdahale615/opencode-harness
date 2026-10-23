@@ -1,0 +1,182 @@
+# =============================================================
+# OpenCode Harness — .gitignore
+# =============================================================
+
+# -------------------------------------------------------------
+# Python
+# -------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+MANIFEST
+.eggs/
+wheels/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+nosetests.xml
+test-output/
+
+# MyPy / type checkers
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# -------------------------------------------------------------
+# Harness runtime outputs  (never commit these)
+# -------------------------------------------------------------
+
+# Job outputs — traces, reports, receipts
+.harness/
+*/.harness/
+**/.harness/
+
+# Runtime state
+runtime/execution/*
+runtime/state/*
+runtime/sessions/*
+runtime/workspace/*
+runtime/lifecycle/*
+!runtime/**/.gitkeep
+
+# Benchmark + eval reports (machine-generated, can be large)
+evals/reports/*
+!evals/reports/.gitkeep
+
+quality/reports/*
+!quality/reports/.gitkeep
+
+# Workspace snapshots created during runs
+*.jsonl.tmp
+*.snap.tmp
+
+# -------------------------------------------------------------
+# Secrets — NEVER commit these
+# -------------------------------------------------------------
+.env
+.env.*
+*.env
+secrets.json
+secrets.yaml
+secrets.yml
+**/credentials.json
+**/service_account.json
+api_keys.txt
+*.pem
+*.key
+*.p12
+*.pfx
+
+# -------------------------------------------------------------
+# IDEs and editors
+# -------------------------------------------------------------
+
+# VS Code / Kiro
+.vscode/
+.kiro/
+*.code-workspace
+
+# JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+
+# -------------------------------------------------------------
+# OS files
+# -------------------------------------------------------------
+
+# Windows
+Thumbs.db
+Thumbs.db:encdata
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.fuse_hidden*
+.Trash-*
+.nfs*
+
+# -------------------------------------------------------------
+# Logs
+# -------------------------------------------------------------
+*.log
+logs/
+*.out
+
+# -------------------------------------------------------------
+# Docs build output
+# -------------------------------------------------------------
+docs/_build/
+docs/.doctrees/
+site/
+
+# -------------------------------------------------------------
+# Node (if any frontend is added later)
+# -------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -------------------------------------------------------------
+# Temporary files
+# -------------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+.cache/
+tmp/
+temp/

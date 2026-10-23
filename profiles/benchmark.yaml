@@ -1,0 +1,10 @@
+# For benchmarks/: deterministic, no interactive "ask user" path should be
+# reachable - benchmark runners should treat ASK_USER outcomes as failures
+# rather than blocking on input.
+name: benchmark
+acceptance_policy:
+  allow_unverified_low_risk: false
+  max_reverify: 2
+permission:
+  default_verdict: deny
+non_interactive: true

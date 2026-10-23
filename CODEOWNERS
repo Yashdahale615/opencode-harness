@@ -1,0 +1,9 @@
+# Default owners for everything in the repo, unless a later match takes precedence.
+*                       @opencode-harness/maintainers
+
+# Security-sensitive surfaces get an extra required review.
+/src/harness/permission/   @opencode-harness/security
+/src/harness/gate/         @opencode-harness/security
+/src/harness/evidence/     @opencode-harness/security
+/src/harness/verification/ @opencode-harness/security
+/SECURITY.md                @opencode-harness/security
