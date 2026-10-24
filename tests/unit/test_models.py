@@ -6,7 +6,7 @@ from harness.models.route import Profile, TaskFeatures, route
 def make_profiles():
     return {
         "core": Profile("core", "gemini-1.5-flash", 100_000, 10, 1),
-        "deep": Profile("deep", "gemini-1.5-pro",  200_000, 50, 2),
+        "deep": Profile("deep", "gemini-1.5-flash",  200_000, 50, 2),
         "orchestration": Profile("orchestration", "gemini-1.5-pro", 100_000, 30, 2),
     }
 
